@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lienzzo | Papelería bonita, arte y más</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Comfortaa:wght@500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tooplate-mochi-space.css">
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div><div class="shape shape-2"></div><div class="shape shape-3"></div><div class="shape shape-4"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo"><img src="images/logo-lienzzo.jpg" alt="Logo Lienzzo" class="logo-img"> Lienzzo</a>
+            <ul class="nav-links">
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#como-comprar">Cómo comprar</a></li>
+                <li><a href="#opiniones">Opiniones</a></li>
+            </ul>
+            <a href="https://wa.me/525615809420" target="_blank" rel="noopener" class="nav-cta">Pedir por WhatsApp</a>
+            <button class="cart-nav-btn" id="cartOpenBtn" type="button" aria-label="Abrir carrito"><span>Carrito</span><strong id="cartCount">0</strong></button>
+            <div class="mobile-menu-btn" id="mobileMenuBtn"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu-links">
+            <li><a href="#catalogo">Catálogo</a></li><li><a href="#categorias">Categorías</a></li><li><a href="#como-comprar">Cómo comprar</a></li><li><a href="#opiniones">Opiniones</a></li>
+        </ul>
+        <button class="mobile-menu-cta cart-mobile-btn" id="cartOpenBtnMobile" type="button">Ver carrito <strong id="cartCountMobile">0</strong></button>
+        <a href="https://wa.me/525615809420" target="_blank" rel="noopener" class="mobile-menu-cta">Pedir por WhatsApp</a>
+    </div>
+
+    <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Carrito de compras">
+        <div class="cart-header">
+            <div>
+                <span class="cart-eyebrow">Pedido por WhatsApp</span>
+                <h2>Tu carrito</h2>
+            </div>
+            <button class="cart-close" id="cartCloseBtn" type="button" aria-label="Cerrar carrito">×</button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-empty" id="cartEmpty">
+                <img src="images/icons/libreta.png" alt="Libreta">
+                <p>Aún no agregas productos.</p>
+                <a href="#catalogo" class="btn-cart-outline" id="cartGoCatalog">Ver catálogo</a>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+        </div>
+        <div class="cart-footer">
+            <label>Tu nombre <input type="text" id="customerName" placeholder="Ej. Eduardo"></label>
+            <label>Entrega o notas <textarea id="customerNotes" rows="3" placeholder="Ej. Entrega en Ixtapaluca / envío / dudas de disponibilidad"></textarea></label>
+            <div class="cart-note">El precio final y disponibilidad se confirman por WhatsApp.</div>
+            <a class="cart-whatsapp disabled" id="checkoutWhatsApp" target="_blank" rel="noopener">Enviar pedido por WhatsApp</a>
+            <button class="cart-clear" id="cartClearBtn" type="button">Vaciar carrito</button>
+        </div>
+    </aside>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge"><img class="icon-badge" src="images/icons/corazon.png" alt="Corazón"> Catálogo digital de papelería bonita</div>
+                <h1>Papelería bonita, <span>arte y más</span></h1>
+                <p>Productos que inspiran tu día, acompañan tus ideas y hacen más bonito cada apunte, regalo o proyecto creativo.</p>
+                <div class="hero-buttons">
+                    <a href="#catalogo" class="btn btn-primary"><img class="icon-btn" src="images/icons/libreta.png" alt="Libreta"> Ver catálogo</a>
+                    <a href="#categorias" class="btn btn-secondary"><img class="icon-btn" src="images/icons/estrella.png" alt="Estrella"> Explorar categorías</a>
+                </div>
+            </div>
+            <div class="hero-visual lienzzo-visual">
+                <img class="deco deco-1 deco-img" src="images/icons/estrella.png" alt=""><img class="deco deco-2 deco-img" src="images/icons/corazon.png" alt=""><img class="deco deco-3 deco-img" src="images/icons/ramita.png" alt="">
+                <div class="phone-mockup catalogo-cover">
+                    <div class="phone-screen">
+                        <img src="images/bienvenida-lienzzo.png" alt="Bienvenida catálogo digital Lienzzo">
+                    </div>
+                </div>
+                <img class="float-element float-heart float-img" src="images/icons/corazon.png" alt=""><img class="float-element float-star float-img" src="images/icons/estrella.png" alt=""><img class="float-element float-cloud float-img" src="images/icons/pincel.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="catalogo-section" id="catalogo">
+        <div class="section-header reveal">
+            <div class="section-badge"><img class="icon-badge" src="images/icons/corazon.png" alt="Corazón"> Catálogo Lienzzo</div>
+            <h2>Explora el catálogo</h2>
+            <p>Productos organizados para carrito, stock y compra por WhatsApp.</p>
+        </div>
+
+        <div class="catalog-tools reveal">
+            <div class="catalog-search">
+                <img src="images/icons/busqueda.png" alt="Buscar">
+                <input type="search" id="productSearch" placeholder="Buscar producto, categoría o descripción...">
+            </div>
+            <div class="catalog-filters" id="catalogFilters"></div>
+        </div>
+
+        <div class="catalogo-grid" id="catalogGrid"></div>
+    </section>
+
+    <section class="features" id="categorias">
+        <div class="section-header reveal">
+            <div class="section-badge"><img class="icon-badge" src="images/icons/estrella.png" alt="Estrella"> Categorías</div>
+            <h2>Todo para crear bonito</h2>
+            <p>Organiza tu compra por tipo de producto y encuentra rápido eso que le falta a tu escritorio.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal"><div class="feature-image"><div class="feature-image-inner"><img class="category-icon" src="images/icons/libreta.png" alt="Libreta"></div></div><div class="feature-content"><h3><img class="icon-title" src="images/icons/libreta.png" alt=""> Libretas</h3><p>Libretas de espiral, pasta dura, diseños artísticos y formatos para escuela, journaling o trabajo.</p><span class="feature-tag">Apuntes bonitos</span></div></div>
+            <div class="feature-card reveal"><div class="feature-image"><div class="feature-image-inner"><img class="category-icon" src="images/icons/pincel.png" alt="Pincel"></div></div><div class="feature-content"><h3><img class="icon-title" src="images/icons/pincel.png" alt=""> Colores</h3><p>Sets de colores y marcadores para ilustrar, subrayar, decorar y darle personalidad a tus ideas.</p><span class="feature-tag">Arte y dibujo</span></div></div>
+            <div class="feature-card reveal"><div class="feature-image"><div class="feature-image-inner"><img class="category-icon" src="images/icons/clip.png" alt="Clip"></div></div><div class="feature-content"><h3><img class="icon-title" src="images/icons/clip.png" alt=""> Plumones</h3><p>Plumones, marcadores y tonos suaves para lettering, notas creativas y proyectos aesthetic.</p><span class="feature-tag">Lettering</span></div></div>
+            <div class="feature-card reveal"><div class="feature-image"><div class="feature-image-inner"><img class="category-icon" src="images/icons/washi-tape.png" alt="Washi tape"></div></div><div class="feature-content"><h3><img class="icon-title" src="images/icons/washi-tape.png" alt=""> Scrapbook</h3><p>Materiales para decorar recuerdos, armar detalles, personalizar libretas y crear regalos especiales.</p><span class="feature-tag">Hecho con amor</span></div></div>
+        </div>
+    </section>
+
+    <section class="how-it-works" id="como-comprar">
+        <div class="section-header reveal"><div class="section-badge"><img class="icon-badge" src="images/icons/ramita.png" alt="Ramita"> Fácil y bonito</div><h2>Comprar es muy sencillo</h2><p>Elige tus productos favoritos y escríbenos para revisar disponibilidad, formas de pago y entrega.</p></div>
+        <div class="steps">
+            <div class="step reveal"><div class="step-number">1</div><h3>Explora el catálogo</h3><p>Revisa el catálogo y agrega al carrito los productos que más te gusten.</p></div>
+            <div class="step reveal"><div class="step-number">2</div><h3>Escríbenos</h3><p>Envía tu carrito por WhatsApp para confirmar disponibilidad y precio final.</p></div>
+            <div class="step reveal"><div class="step-number">3</div><h3>Recibe tu pedido</h3><p>Coordinamos pago, entrega o envío para que tu papelería llegue linda y segura.</p></div>
+        </div>
+    </section>
+
+    <section class="app-preview" id="preview">
+        <div class="section-header reveal"><div class="section-badge"><img class="icon-badge" src="images/icons/washi-tape.png" alt="Washi tape"> Inspiración</div><h2>Una marca con vibra de catálogo</h2><p>Diseñada con tonos matcha, beige cálido, detalles de papel, arte y mucha ternura.</p></div>
+        <div class="preview-screens">
+            <div class="preview-phone reveal"><div class="preview-screen"><img src="images/logo-lienzzo.jpg" alt="Logo Lienzzo"></div></div>
+            <div class="preview-phone reveal"><div class="preview-screen"><img src="images/catalogo/van-gogh.jpg" alt="Colección artística"></div></div>
+            <div class="preview-phone reveal"><div class="preview-screen"><img src="images/catalogo/marcadores.jpg" alt="Marcadores Lienzzo"></div></div>
+        </div>
+    </section>
+
+
+    <section class="testimonials" id="opiniones">
+        <div class="section-header reveal">
+            <div class="section-badge"><img class="icon-badge" src="images/icons/corazon.png" alt="Corazón"> Opiniones</div>
+            <h2>Cuéntanos qué te pareció</h2>
+            <p>Por ahora no mostraremos opiniones inventadas. Este apartado queda listo para que tus clientes puedan dejar la suya por WhatsApp.</p>
+        </div>
+        <div class="review-box reveal">
+            <div class="review-card">
+                <img src="images/icons/libreta.png" alt="Opinión Lienzzo">
+                <h3>Deja tu opinión sobre Lienzzo</h3>
+                <p>Tu experiencia nos ayuda a mejorar el catálogo, los productos y la atención.</p>
+                <label>Tu nombre
+                    <input type="text" id="reviewName" placeholder="Ej. Ana">
+                </label>
+                <label>Tu opinión
+                    <textarea id="reviewMessage" rows="4" placeholder="Escribe aquí tu experiencia con Lienzzo..."></textarea>
+                </label>
+                <a href="#" class="btn-review" id="sendReviewWhatsApp" target="_blank" rel="noopener">Enviar opinión por WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-cta" id="contacto">
+        <div class="cta-content reveal">
+            <img class="cta-logo" src="images/logo-lienzzo.jpg" alt="Logo Lienzzo">
+            <h2>¿Lista para elegir tus favoritos?</h2>
+            <p>Escríbenos para consultar disponibilidad, precios, entregas y novedades del catálogo.</p>
+            <div class="app-buttons">
+                <a href="https://wa.me/525615809420" target="_blank" rel="noopener" class="app-btn"><img class="app-btn-icon-img" src="images/icons/whatsapp.png" alt="WhatsApp"><div class="app-btn-text"><div class="app-btn-small">Pedir por</div><div class="app-btn-large">WhatsApp</div></div></a>
+                <a href="https://www.instagram.com/hola_somos_lienzzo?igsh=MWwzb2FvcDVydHdj" target="_blank" rel="noopener" class="app-btn"><img class="app-btn-icon-img" src="images/icons/instagram.png" alt="Instagram"><div class="app-btn-text"><div class="app-btn-small">Ver más en</div><div class="app-btn-large">Instagram</div></div></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper"><div class="footer-content"><div class="footer-brand"><a href="#" class="logo"><img src="images/logo-lienzzo.jpg" alt="Logo Lienzzo" class="logo-img"> Lienzzo</a><p>Papelería bonita, arte y más. Productos que inspiran tu creatividad, acompañan tus ideas y hacen tu día más bonito.</p><div class="footer-social"><a href="https://www.instagram.com/hola_somos_lienzzo?igsh=MWwzb2FvcDVydHdj" target="_blank" rel="noopener" class="social-icon"><img src="images/icons/instagram.png" alt="Instagram"></a><a href="https://wa.me/525615809420" target="_blank" rel="noopener" class="social-icon"><img src="images/icons/whatsapp.png" alt="WhatsApp"></a><a href="#catalogo" class="social-icon"><img src="images/icons/libreta.png" alt="Catálogo"></a></div></div><div class="footer-column"><h4>Catálogo</h4><ul><li><a href="#catalogo">Favoritos</a></li><li><a href="#categorias">Categorías</a></li><li><a href="#como-comprar">Cómo comprar</a></li></ul></div><div class="footer-column"><h4>Productos</h4><ul><li><a href="#">Libretas</a></li><li><a href="#">Plumones</a></li><li><a href="#">Scrapbook</a></li></ul></div><div class="footer-column"><h4>Contacto</h4><ul><li><a href="https://wa.me/525615809420" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="https://www.instagram.com/hola_somos_lienzzo?igsh=MWwzb2FvcDVydHdj" target="_blank" rel="noopener">Instagram</a></li><li><a href="#contacto">Ubicaciones</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Lienzzo. Todos los derechos reservados.</p><p>Base HTML: Tooplate, adaptada para Lienzzo.</p></div></div>
+    </footer>
+
+
+    <div class="product-modal" id="productModal" aria-hidden="true">
+        <div class="product-modal-overlay" id="productModalOverlay"></div>
+        <div class="product-modal-card" role="dialog" aria-modal="true" aria-label="Detalle de producto">
+            <button class="product-modal-close" id="productModalClose" type="button" aria-label="Cerrar">×</button>
+            <div class="product-gallery">
+                <button class="gallery-arrow gallery-prev" id="galleryPrev" type="button" aria-label="Imagen anterior">‹</button>
+                <img id="modalProductImage" src="" alt="">
+                <button class="gallery-arrow gallery-next" id="galleryNext" type="button" aria-label="Imagen siguiente">›</button>
+                <div class="gallery-thumbs" id="galleryThumbs"></div>
+            </div>
+            <div class="product-modal-info">
+                <span class="modal-category" id="modalProductCategory"></span>
+                <h2 id="modalProductName"></h2>
+                <div class="modal-price" id="modalProductPrice"></div>
+                <div class="modal-stock" id="modalProductStock"></div>
+                <p id="modalProductDescription"></p>
+                <div class="modal-actions">
+                    <button class="btn-catalogo" id="modalAddToCart" type="button">Agregar al carrito</button>
+                    <a class="btn-whatsapp-product" id="modalWhatsApp" target="_blank" rel="noopener">Preguntar por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="productos-datos.js"></script>
+    <script src="tooplate-mochi-script.js"></script>
+</body>
+</html>
